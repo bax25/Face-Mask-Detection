@@ -47,7 +47,7 @@ def show_demo_images():
             index = row * (cols_per_row) + col  # Calculate index for the demo images
             if index < len(demo_images):  # Check if the index is within the demo images list
                 img_name = demo_images[index]
-                img_path = os.path.join('Demo Images', img_name)  # Assuming images are in a folder named 'Demo Images'
+                img_path = os.path.join('Demo_Images', img_name)  # Assuming images are in a folder named 'Demo Images'
                 
                 # Open and resize the demo image
                 with open(img_path, "rb") as file:
