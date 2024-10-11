@@ -24,6 +24,17 @@ def detect_and_crop_faces(img):
     
     return face_crops
 
+# Get the current working directory
+current_directory = os.getcwd()
+print(f"Current Working Directory: {current_directory}")
+
+# List all files and directories in the current working directory
+files = os.listdir(current_directory)
+
+print("Files and directories in the current directory:")
+for file in files:
+    print(file)
+    
 # Function to display demo images
 def show_demo_images():
     demo_images = [
