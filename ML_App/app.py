@@ -24,17 +24,6 @@ def detect_and_crop_faces(img):
     
     return face_crops
 
-# Get the current working directory
-current_directory = os.getcwd()
-print(f"Current Working Directory: {current_directory}")
-
-# List all files and directories in the current working directory
-files = os.listdir(current_directory)
-
-print("Files and directories in the current directory:")
-for file in files:
-    print(file)
-    
 # Function to display demo images
 def show_demo_images():
     demo_images = [
@@ -58,7 +47,7 @@ def show_demo_images():
             index = row * (cols_per_row) + col  # Calculate index for the demo images
             if index < len(demo_images):  # Check if the index is within the demo images list
                 img_name = demo_images[index]
-                img_path = os.path.join('Demo_Images', img_name)  # Assuming images are in a folder named 'Demo Images'
+                img_path = os.path.join('ML_App','Demo_Images', img_name)  # Assuming images are in a folder named 'Demo Images'
                 
                 # Open and resize the demo image
                 with open(img_path, "rb") as file:
