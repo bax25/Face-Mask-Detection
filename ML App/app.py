@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Load the trained model
-model = tf.keras.models.load_model(r'C:\Users\Bala Vignesh\ML Coding\Face Mask Detection\face_mask_detector.h5')
+model = tf.keras.models.load_model('ML App\face_mask_detector.h5')
 
 # Load pre-trained face detection model (Haar Cascade)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
