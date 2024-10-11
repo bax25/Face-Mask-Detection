@@ -62,7 +62,7 @@ def show_demo_images():
 st.title("Face Mask Detection App")
 
 # Upload image
-uploaded_file = st.file_uploader("Or drag and drop an image", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Drag and drop an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     # Convert the uploaded image into a PIL image
